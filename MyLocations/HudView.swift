@@ -48,7 +48,7 @@ class HudView: UIView {
         }
 
         
-        // XCode 9 sucks! (Doesn't work because of use of NSAttributedString.Key
+        // XCode 9 sucks! (Doesn't work because of use of NSAttributedString.Key)
 //        let attribs = [
 //            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16),
 //            NSAttributedString.Key.foregroundColor: UIColor.white ]
