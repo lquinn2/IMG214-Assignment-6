@@ -47,7 +47,7 @@ class HudView: UIView {
                 y: center.y - round(image.size.height / 2) - boxHeight / 8)
             image.draw(at: imagePoint)
         }
-        
+
         let attribs = [
             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16),
             NSAttributedStringKey.foregroundColor: UIColor.white ]
