@@ -13,6 +13,9 @@
 		3F1D5CD8223096C800ECB552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1D5CD6223096C800ECB552 /* Main.storyboard */; };
 		3F1D5CDA223096C800ECB552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F1D5CD9223096C800ECB552 /* Assets.xcassets */; };
 		3F1D5CDD223096C800ECB552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1D5CDB223096C800ECB552 /* LaunchScreen.storyboard */; };
+		3F4338472241D9C00023FAF3 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F4338452241D9C00023FAF3 /* DataModel.xcdatamodeld */; };
+		3F43384A2241DC610023FAF3 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4338482241DC610023FAF3 /* Location+CoreDataClass.swift */; };
+		3F43384B2241DC610023FAF3 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4338492241DC610023FAF3 /* Location+CoreDataProperties.swift */; };
 		3F84DF402233181F0029C7E2 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F84DF3F2233181F0029C7E2 /* LocationDetailsViewController.swift */; };
 		3F84DF4222332BDB0029C7E2 /* CategoryPickerviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F84DF4122332BDB0029C7E2 /* CategoryPickerviewController.swift */; };
 		3F885E502236F6FF00E98705 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F885E4F2236F6FF00E98705 /* Functions.swift */; };
@@ -29,6 +32,9 @@
 		3F1D5CD9223096C800ECB552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F1D5CDC223096C800ECB552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F1D5CDE223096C800ECB552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F4338462241D9C00023FAF3 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		3F4338482241DC610023FAF3 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F4338492241DC610023FAF3 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F84DF3F2233181F0029C7E2 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		3F84DF4122332BDB0029C7E2 /* CategoryPickerviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerviewController.swift; sourceTree = "<group>"; };
 		3F885E4F2236F6FF00E98705 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
@@ -50,6 +56,8 @@
 		3F1D5CC4223096C800ECB552 = {
 			isa = PBXGroup;
 			children = (
+				3F4338482241DC610023FAF3 /* Location+CoreDataClass.swift */,
+				3F4338492241DC610023FAF3 /* Location+CoreDataProperties.swift */,
 				3F1D5CCF223096C800ECB552 /* MyLocations */,
 				3F1D5CCE223096C800ECB552 /* Products */,
 			);
@@ -76,6 +84,7 @@
 				3F84DF3F2233181F0029C7E2 /* LocationDetailsViewController.swift */,
 				3F885E4F2236F6FF00E98705 /* Functions.swift */,
 				3F1D5CD9223096C800ECB552 /* Assets.xcassets */,
+				3F4338452241D9C00023FAF3 /* DataModel.xcdatamodeld */,
 				3F1D5CDB223096C800ECB552 /* LaunchScreen.storyboard */,
 				3F1D5CDE223096C800ECB552 /* Info.plist */,
 			);
@@ -156,11 +165,14 @@
 			files = (
 				3F84DF402233181F0029C7E2 /* LocationDetailsViewController.swift in Sources */,
 				3F1D5CD5223096C800ECB552 /* SecondViewController.swift in Sources */,
+				3F43384B2241DC610023FAF3 /* Location+CoreDataProperties.swift in Sources */,
 				3FCE3D912236F04B00D07AC9 /* HudView.swift in Sources */,
 				3F885E502236F6FF00E98705 /* Functions.swift in Sources */,
 				3F885E542236F86E00E98705 /* TagPickerViewController.swift in Sources */,
 				3F1D5CD1223096C800ECB552 /* AppDelegate.swift in Sources */,
+				3F4338472241D9C00023FAF3 /* DataModel.xcdatamodeld in Sources */,
 				3F84DF4222332BDB0029C7E2 /* CategoryPickerviewController.swift in Sources */,
+				3F43384A2241DC610023FAF3 /* Location+CoreDataClass.swift in Sources */,
 				3F1D5CD3223096C800ECB552 /* CurrentLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +356,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F4338452241D9C00023FAF3 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F4338462241D9C00023FAF3 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 3F4338462241D9C00023FAF3 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3F1D5CC5223096C800ECB552 /* Project object */;
 }
